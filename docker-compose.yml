@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  springboot:
+    container_name: springboot
+    restart: always #"no",always,on-failure,unless-stopped
+    build: .
+    ports:
+      - "8085:8085"
